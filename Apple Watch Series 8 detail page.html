@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail page</title>
+    <link rel = "stylesheet" href = "one page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+    <title>Electronic Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--bootstrap links-->
+    <!--fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
+<!--fonts links end-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html" id="logo"><span id="span1">E</span>Lectronic<span id="spane2">Shop</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" ></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+              <li><a class="dropdown-item" href="#">Smart Phone</a></li>
+              <li><a class="dropdown-item" href="#">Cell Phone</a></li>
+              <li><a class="dropdown-item" href="#">Laptop</a></li>
+              <li><a class="dropdown-item" href="#">Cameras</a></li>
+              <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+              <li><a class="dropdown-item" href="#">Headphone</a></li>
+              <li><a class="dropdown-item" href="#">PC Monitor</a></li>
+              <li><a class="dropdown-item" href="#">AC</a></li>
+              <li><a class="dropdown-item" href="#">Fridge</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="top-navbar">
+    <div class="icons">
+       <button><a href="login.html">Login</a></button> 
+       <button><a href="register.html">Register</a></button>
+    </div>
+</div>
+<!--navbar end-->
+<!--details product start-->
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                        <img src = "images/ab4.jpg" alt = "watch">
+                    </div>
+                    <div class = "hover-container">
+                        <div><img src = "images/ab4.jpg"></div>
+                        <div><img src = "images/ac1.jpg"></div>
+                        <div><img src = "images/ac2.jpg"></div>
+                        <div><img src = "images/ac3.jpg"></div>
+                        <div><img src = "images/ac4.jpg"></div>
+                    </div>
+                </div>
+                <div class = "product-div-right">
+                    <span class = "product-name">Apple Watch Series 8</span>
+                    <span class = "product-price">$ 549</span>
+                    <div class = "product-rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star-half-alt"></i></span>
+                        <span>(350 ratings)</span>
+                    </div>
+                    <p class = "product-description">Apple Watch Series 8 is the latest smartwatch from Apple. It features a number of improvements over the previous model, 
+                         including a new temperature sensor, a faster processor, and an improved Crash Detection feature. <br>Overall, the Apple Watch Series 8 is a great
+                          smartwatch with a number of new and improved features. It is a solid upgrade over the Apple Watch Series 7 and is worth considering if you are
+                           looking for a new smartwatch.
+
+                        </p>
+                    <div class = "btn-groups">
+                        <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>add to cart</button>
+                        <button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--javascript-->
+ <script >
+        
+const allHoverImages = document.querySelectorAll('.hover-container div img');
+const imgContainer = document.querySelector('.img-container');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
+
+allHoverImages.forEach((image) => {
+    image.addEventListener('mouseover', () =>{
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
+    });
+});
+
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
+}
+    </script>
+<!--javascript end-->
+<!--details product end-->
+
+<!--Product cards start-->
+<div class="container" id="product-cards">
+    <h1 class="text-center">PRODUCTS</h1>
+     <div class="row" style="margin-top: 30px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <a href="Iphone 13 pro max details page.html">
+        <div class="card">
+         <img src="./images/iPhone-13-Pro-Max-PNG-Photos.png"alt="">
+         <div class="card-body">
+          <h3 class="text-center">Iphone 13 pro max</h3></a>
+          <p class="text-center"><h7>A15 Bionic chip, 16GB of RAM
+            Up to 1TB of storage</h7></p>
+          <div class="star text-center">
+         <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+            <h2>$1299<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+  
+          </div>
+         </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+         <img src="./images/Mac laptop.jpeg"alt="">
+         <div class="card-body">
+          <h3 class="text-center"> MacBook Pro </h3>
+          <p class="text-center"><h7>13-inch and 14-inch,  resolution of 3024x1964 pixels.</h7></p>
+          <div class="star text-center">
+            <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+            <h2>$999<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+         </div>
+        </div>
+     </div>
+     <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+         <img src="./images/8Plus.jpeg.jpg"alt="">
+         <div class="card-body">
+          <h3 class="text-center">Iphone 8 Plus</h3>
+          <p class="text-center"><h7>A11 Bionic chip, 3GB of RAM
+            with Up to 256GB of storage
+          </h7></p>
+          <div class="star text-center">
+          <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          
+          <span class="fa fa-star"></span>
+            <h2>$499<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          </div>
+         </div>
+        </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+           <img src="./images/Ipad.jpeg"alt="">
+           <div class="card-body">
+            <h3 class="text-center">iPad Pro 2022</h3>
+            <p class="text-center"><h7>Apple M2 chip, resolution 2732x2048 pixels with storage 128GB to 2TB.</h7></p>
+            <div class="star text-center">
+            <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+              <h2>$500<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+           </div>
+           </div>
+           </div>
+           <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+             <img src="./images/galaxy-s23-ultra-graphite.webp"alt="">
+             <div class="card-body">
+              <h3 class="text-center">Samsung Galaxy S23 U</h3>
+              <p class="text-center"><h7>8GB/12GB of RAM with up to 1TB of storage</h7></p>
+              <div class="star text-center">
+             <!-- Add icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h2>$1500<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+              </div>
+             </div>
+            </div>
+           </div>
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <a href="Apple Watch Series 8 detail page.html">
+               <img src="./images/watch s8.jpeg"alt="">
+               <div class="card-body">
+                <h3 class="text-center">Apple Watch Series 8</h3></a>
+                <p class="text-center"><h7>Apple Smart Watches (45mm)</h7></p>
+                <div class="star text-center">
+               <!-- Add icon library -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <h2>$549<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+                </div>
+               </div>
+              </div>
+              </div>
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                 <img src="./images/apple_mac 27in.jpg"alt="">
+                 <div class="card-body">
+                  <h3 class="text-center">Apple 27" iMac Pro </h3>
+                  <p class="text-center"><h7> iMac pro with Retina 5K Display, 64GB of DDR4 RAM | 1TB SSD, 27" 5120 x 2880 IPS Retina 5K Display </h7></p>
+                  <div class="star text-center">
+                 <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <h2>$1180<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+                  </div>
+                 </div>
+                </div>
+              </div>
+           <div class="col-md-3 py-3 py-md-0">
+             <div class="card">
+              <img src="./images/apple headphone.jpg"alt="">
+              <div class="card-body">
+               <h3 class="text-center">Apple AirPods Max</h3>
+               <p class="text-center"><h7>Apple AirPods Max Silver Wireless Headphones | Spatial audio, Active noise, Spatial Audio with dynamic head tracking</h7></p>
+               <div class="star text-center">
+              <!-- Add icon library -->
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+                 <h2>$549<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+               </div>
+              </div>
+             </div>
+           </div>
+        <!--Product cards-->
+
+    <!--offer-->
+<div class="container" id="offer">
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Free Shipping</h3>
+        <p>On Order over $1000</p>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <h3>Free Returns</h3>
+        <p>Within 30 days</p>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>World Wide</p>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Big Choice</h3>
+        <p>Of Products</p>
+      </div>
+    </div>
+  </div>
+  <!--offer-->
+  
+  <!-- footer -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Electronic Shop</h3>
+            <p>
+              KPK <br>
+              karachi <br>
+              Pak <br>
+            </p>
+            <strong>Phone:</strong> +000000000000 <br>
+            <strong>Email:</strong> electronicshop1@gamil.com <br>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>Usefull Links</h3>
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="Terms & Conditions.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy policey</a></li>
+            </ul>
+          </div>
+      
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>Our Services</h3>
+  
+           <ul>
+            <li><a href="#">PS 5</a></li>
+            <li><a href="#">Computer</a></li>
+            <li><a href="#">Gaming Laptop</a></li>
+            <li><a href="#">Mobile Phone</a></li>
+            <li><a href="#">Gaming Gadget</a></li>
+           </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h3>Our Social Networks</h3>
+            <p>Lorem ipsum dollor sit amet consectetur,adipisicing elit.quibusdam.</p>
+  
+            <div class="Social-links mt-3">
+              <!-- Add icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+            <!-- Add font awesome icons -->
+            <h3>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://m.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.google.com/" class="fa fa-google"></a>
+            <a href="https://web.skype.com/" class="fa fa-skype"></a>
+            ...
+             </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &COPY; Copyright <strong><span>Electronic Shop</span></strong>.All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Abd Ullah</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+  
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  
+</body>
+</html>

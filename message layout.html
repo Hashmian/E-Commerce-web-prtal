@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .message-container {
+            padding: 20px;
+        }
+
+        .message {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .message:hover {
+            transform: scale(1.02);
+        }
+
+        .message h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .details div {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .details strong {
+            color: #3498db;
+        }
+
+        .message p {
+            color: #666;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .delete-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .delete-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>ADMIN PANEL</h2>
+        </div>
+
+        <div class="message-container">
+            <div class="message">
+                <h3>Message 1</h3>
+                <div class="details">
+                    <div>
+                        <strong>Phone Number:</strong>
+                        <p>+923456567890</p>
+                    </div>
+                    <div>
+                        <strong>Email:</strong>
+                        <p>bella132@example.com</p>
+                    </div>
+                    <div>
+                        <strong>Date:</strong>
+                        <p class="date">2023-01-01</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <div>
+                        <strong>Address:</strong>
+                        <p>123 Main Street, Cityville</p>
+                    </div>
+                </div>
+                <div>
+                    <strong>Message:</strong>
+                    <p>Hi there! i'm Bella, I wanted to express my gratitude for your outstanding service. The prompt response, attention to detail, and friendly support made my experience truly exceptional. Keep up the fantastic work! Looking forward to continued collaboration.
+.</p>
+                </div>
+                <button class="delete-button">Delete</button>
+            </div>
+
+            <div class="message">
+                <h3>Message 2</h3>
+                <!-- Repeat the structure for additional messages -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

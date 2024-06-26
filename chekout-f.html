@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout-f.css">
+</head>
+<body>
+    <div class='container'>
+        <div class='window'>
+          <div class='order-info'>
+            <div class='order-info-content'>
+              <h2>Order Summary</h2>
+                      <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://th.bing.com/th/id/OIP.RwMfdV-LMkDV0hGvfsO16wAAAA?w=474&h=557&rs=1&pid=ImgDetMain' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Iphone 15</span>
+                      <br> Free Run 3.0 Women<br> <span class='thin small'> Color: black, storage: 256gb<br><br></span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>$999.95</div>
+                    </td>
+                  </tr>
+                </tbody>
+      
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://www.bhphotovideo.com/images/images2500x2500/apple_mlch2ll_a_watch_sport_smartwatch_38mm_1187204.jpg' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Apple Watch Sport 38mm </span>
+                      <br>Smartwatch MLCH2LL/A B&H Photo Video<br> <span class='thin small'> Color:black, Size: 38mm</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>$335.</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='https://i5.walmartimages.com/asr/c2d8cb62-93b8-4c93-992d-d03859b4e982_1.1ccd66831adc03f057b56e0e9706d3ce.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Fast USB Charging Cable </span>
+                      <br><br> <span class='thin small'> Fast USB Charging Cable Universal 3 in 1 Multi Function Cell Phone Cord ...</span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>$25.</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='line'></div>
+              <div class='total'>
+                <span style='float:left;'>
+                  <div class='thin dense'>VAT 5%</div>
+                  <div class='thin dense'>Delivery</div>
+                  TOTAL
+                </span>
+                <span style='float:right; text-align:right;'>
+                  <div class='thin dense'>$71.75</div>
+                  <div class='thin dense'>$4.</div>
+                  $1435.7
+                </span>
+              </div>
+      </div>
+      </div>
+      <!-----------------------------------========= card section start ==============--------------------------------------------->
+              <div class='credit-info'>
+                <div class='credit-info-content'>
+                  <table class='half-input-table'>
+                    <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                      <div class='dropdown-select'>
+                      <ul>
+                        <li>Master card</li>
+                        <li>Debit card</li>
+                        <li>Credit card</li>
+                        <li>PayPal</li>
+                        <li>Jazz cash</li>
+                        <li>Eassy paisa</li>
+                        </ul></div>
+                      </div>
+                     </td></tr>
+                  </table>
+                  <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                  Card Number
+                  <input class='input-field'></input>
+                  Card Holder
+                  <input class='input-field' ></input>
+                  <table class='half-input-table'>
+                    <tr>
+                      <td> Expires
+                        <input class='input-field'></input>
+                      </td>
+                      <td>CVC
+                        <input class='input-field'></input>
+                      </td>
+                    </tr>
+                  </table>
+                  <button class='pay-btn'>Checkout</button>
+      
+                </div>
+      
+              </div>
+            </div>
+      </div>
+<script>
+
+// Get the necessary elements
+var cardDropdown = document.getElementById('card-dropdown');
+var currentCard = document.getElementById('current-card');
+var dropdownSelect = document.querySelector('.dropdown-select ul');
+
+// Add a click event listener to the card dropdown
+cardDropdown.addEventListener('click', function () {
+    dropdownSelect.classList.toggle('visible');
+});
+
+dropdownSelect.addEventListener('click', function (e) {
+    if (e.target.tagName === 'LI') {
+        currentCard.textContent = e.target.textContent;
+
+        dropdownSelect.classList.remove('visible');
+    }
+});
+window.addEventListener('click', function (e) {
+    if (!cardDropdown.contains(e.target) && e.target !== currentCard) {
+        dropdownSelect.classList.remove('visible');
+    }
+});
+
+
+ var cardDrop = document.getElementById('card-dropdown');
+var activeDropdown;
+cardDrop.addEventListener('click',function(){
+  var node;
+  for (var i = 0; i < this.childNodes.length-1; i++)
+    node = this.childNodes[i];
+    if (node.className === 'dropdown-select') {
+      node.classList.add('visible');
+       activeDropdown = node; 
+    };
+});
+
+window.onclick = function(e) {
+  console.log(e.target.tagName)
+  console.log('dropdown');
+  console.log(activeDropdown)
+  if (e.target.tagName === 'LI' && activeDropdown){
+    if (e.target.innerHTML === 'Master Card') {
+      document.getElementById('credit-card-image').src = 'images/viza logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Master Card';
+    }
+    else if (e.target.innerHTML === 'Debit card') {
+         document.getElementById('credit-card-image').src = 'images/viza logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Debit card';      
+    }
+    else if (e.target.innerHTML === 'Credit card') {
+         document.getElementById('credit-card-image').src = 'images/viza logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Credit card';
+    }
+    else if (e.target.innerHTML === 'PayPal') {
+         document.getElementById('credit-card-image').src = 'images/PayPal-Logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'PayPal';
+    }
+    else if (e.target.innerHTML === 'Jazz cash') {
+         document.getElementById('credit-card-image').src = 'images/jazzcashhh.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Jazz cash';
+    }
+    else if (e.target.innerHTML === 'Eassy paisa') {
+         document.getElementById('credit-card-image').src = 'https://www.hosterpk.com/wp-content/uploads/2020/02/easy-paisa-transparent-Logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Eassy paisa';
+    }
+  }
+  else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+    activeDropdown.classList.remove('visible');
+    activeDropdown = null;
+  };
+};
+
+</script>
+</body>
+</html>
